@@ -1,8 +1,6 @@
 #!/bin/bash
 #ce script nous permet de compter le nombre de fichiers dans un repertore
-
-repertoire=$(ls | wc -l)
-
-if [ "$repertoire" ]; then
-echo "Le répertoire C01 contient "$repertoire" fichier(s)."
-fi
+read myfolder
+count=$(ls -1 $myfolder | wc -l)
+counts=$(echo $count)
+echo "Le répertoire "$myfolder" contient "$counts" fichier(s)."
