@@ -7,7 +7,7 @@ read texte_rechercher
 num_occurence=$(grep "$texte_rechercher" "$ficher")
 
 if [ "$num_occurence" ]; then
-echo "La chaîne "$texte_rechercher" existe dans "$ficher"."
+echo "La chaîne '$texte_rechercher' a été trouvée dans "$ficher"."
 else 
-echo "La chaine "$texte_rechercher" n'existe pas dans "$ficher"."
+echo "La chaine '$texte_rechercher' n'a pas été trouvée dans "$ficher"."
 fi
