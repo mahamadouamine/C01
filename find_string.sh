@@ -4,7 +4,7 @@ read ficher
 
 read texte_rechercher
 
-num_occurence=$(grep "$texte_rechercher" "$ficher")
+num_occurence=$(grep -i "$texte_rechercher" "$ficher")
 
 if [ "$num_occurence" ]; then
 echo "La chaîne '$texte_rechercher' a été trouvée dans "$ficher"."
