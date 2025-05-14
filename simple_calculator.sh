@@ -15,7 +15,7 @@ elif [ "$op" = "-" ]; then
 elif [ "$op" = "*" ]; then
     Resultat=$(($a * $b))
 
-elif [ "$op" = "/" ]; then
+elif [ "$op" = "/" | bc ]; then
     Resultat=$(($a / $b))   
 fi
 echo "Resultat : $Resultat" 
