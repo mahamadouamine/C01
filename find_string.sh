@@ -1,8 +1,7 @@
 #!/bin/bash
 
-read ficher
+read texte_rechercher ficher
 
-read texte_rechercher
 if grep -q "$texte_rechercher" "$ficher"; then
     echo "La chaîne '$texte_rechercher' a été trouvée dans '$ficher'."
 else
