@@ -8,14 +8,11 @@ read a b op
 
 if [ "$op" = "+" ]; then
     Resultat=$(($a + $b))
-
 elif [ "$op" = "-" ]; then
     Resultat=$(($a - $b))
-
 elif [ "$op" = "*" ]; then
     Resultat=$(($a * $b))
-
-elif [ "$op" = "/" | bc ]; then
+elif [ "$op" = "/" ]; then
     Resultat=$(($a / $b))   
 fi
-echo "Resultat : $Resultat" 
+echo "Résultat : $Resultat" 
