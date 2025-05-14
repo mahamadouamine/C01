@@ -18,4 +18,4 @@ elif [ "$op" = "*" ]; then
 elif [ "$op" = "/" ]; then
      Resultat=$(($a / $b))   
 fi
-echo "Resultat= $Resultat" 
+echo "Resultat : $Resultat" 
