@@ -3,8 +3,7 @@
 read ficher
 
 read texte_rechercher
-recherche=$(grep -l "$texte_rechercher" "$ficher")
-if [ "$recherche" ]; then
+if grep -q "$texte_rechercher" "$ficher"; then
     echo "La chaîne '$texte_rechercher' a été trouvée dans '$ficher'."
 else
     echo "La chaîne '$texte_rechercher' n'a pas été trouvée dans '$ficher'."
