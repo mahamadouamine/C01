@@ -1,9 +1,11 @@
 #!/bin/bash
 
-read texte_rechercher ficher
+read f
 
-if grep -q "$texte_rechercher" "$ficher"; then
-    echo "La chaîne '$texte_rechercher' a été trouvée dans '$ficher'."
+read c
+
+if grep -q "$c" "$f"; then
+    echo "La chaîne '$c' a été trouvée dans '$f'."
 else
-    echo "La chaîne '$texte_rechercher' n'a pas été trouvée dans '$ficher'."
+    echo "La chaîne '$c' n'a pas été trouvée dans '$f'."
 fi
