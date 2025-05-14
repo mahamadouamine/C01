@@ -10,12 +10,12 @@ if [ "$op" = "+" ]; then
     Resultat=$(($a + $b))
 
 elif [ "$op" = "-" ]; then
-     Resultat=$(($a - $b))
+    Resultat=$(($a - $b))
 
 elif [ "$op" = "*" ]; then
-     Resultat=$(($a * $b))
+    Resultat=$(($a * $b))
 
 elif [ "$op" = "/" ]; then
-     Resultat=$(($a / $b))   
+    Resultat=$(($a / $b))   
 fi
 echo "Resultat : $Resultat" 
